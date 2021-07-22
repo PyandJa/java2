@@ -36,11 +36,11 @@ class Example8_9{
   void NewreplaceAll(){
       String str="欢迎大家访问广财教务系统:http://www.gxufe.edu.cn";
       String regex="(http://|www)\56?\\w+\56{1}\\w+\56{1}\\p{Alpha}+";
-      System.out.printf("替换\"%s\"\n中的网站链接信息后得到的字符串:", str)
+      System.out.printf("替换\"%s\"\n中的网站链接信息后得到的字符串:", str);
       str=str.replaceAll(regex, "********");
       System.out.print(str);
   }
 }
-/* 1.matches方法用于指定该字符串是否满足参数中的正则表达式。
-/* 2.replaceAll以指定表达式替换内容
+//1.matches方法用于指定该字符串是否满足参数中的正则表达式。
+//2.replaceAll以指定表达式替换内容
 
