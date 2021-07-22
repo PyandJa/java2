@@ -20,7 +20,7 @@ class Example8_9{
      * 正则表达式匹配。
      */
   void  NewMatches(){
-      String regex="[a-zA-Z|0-9|_]+";
+        String regex="[a-zA-Z|0-9|_]+";
         Scanner scanner=new Scanner(System.in);
         String str=scanner.nextLine();
         if(str.matches(regex)){ //matches方法有
@@ -35,7 +35,7 @@ class Example8_9{
    */
   void NewreplaceAll(){
       String str="欢迎大家访问广财教务系统:http://www.gxufe.edu.cn";
-      String regex="(http://|www)\56?\\w+\56{1}\\w+\56{1}\\p{Alpha}+";
+      String regex="(http://|www)\56?\\w+\56{1}\\w+\56{1}\\p{Alpha}+"; // 正则表达式
       System.out.printf("替换\"%s\"\n中的网站链接信息后得到的字符串:", str);
       str=str.replaceAll(regex, "********");
       System.out.print(str);

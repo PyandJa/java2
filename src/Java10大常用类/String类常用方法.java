@@ -47,7 +47,7 @@ public class String类常用方法 {
     /*
     String类常用方法:
      1.public int length():获取字符串序列长度。
-     2.public boolean equals(String s):比较当前对象的字符序列与s是否相同。
+     2.public boolean equals(String s):比较当前对象的字符序列与参数s是否相同。
      3.public boolean startsWith(String s):判断当前对象的字符前缀是否是参数字符。
       和 pubic boolean endsWith(String s)：判断当前对象的字符后缀是否是参数字符。
      4.public int compareTo(String s):按字典序与参数比较大小，相同则返回0，大于s

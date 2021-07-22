@@ -26,11 +26,12 @@ public class 字符串与字符数组字节数组 {
         
     }
     /*
-        1.String类得构造方法String(byte[])用指定得字节数组构造一个String对象。
-        String(byte[],int offset,int length)构造方法用指定得字节数组得一部分，
+        1.String类的构造方法String(byte[])用指定得字节数组构造一个String对象。
+        String(byte[],int offset,int length)构造方法用指定的字节数组的一部分，
         即从数组起始位置offset开始获取length个字节，构造一个String对象。
         2.public byte[]getBytes(String charsetName)方法使用平台默认字符编码，
-        将当前String对象得字符序列存放到字节数组中，并返回数组得引用。
+        将当前String对象的字符序列存放到字节数组中，并返回数组的引用。
+        3.toCharArray：对字符串进行数组转换
         。。。
     */
     
