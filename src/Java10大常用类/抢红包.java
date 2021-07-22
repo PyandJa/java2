@@ -12,7 +12,7 @@ import java.util.Random;
 public class 抢红包 {
 
     /**
-     *
+     * 这是一个抢红包类
      * @param args
      */
     public static void main(String[] args) {
