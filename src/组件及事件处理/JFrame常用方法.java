@@ -28,7 +28,7 @@ public class JFrame常用方法 {
         Container con = window1.getContentPane();   // 容器对象赋值
         //con.setBackground(Color.DARK_GRAY);       // 设置背景颜色
         window1.setBounds(800, 600, 600, 400);      // 左边 顶部 宽度 高度
-        window1.setVisible(true);   // 窗口可见,默认不可见
+        window1.setVisible(false);   // 窗口可见,默认不可见
         window1.setResizable(true); // 窗口可以调整大小，默认不允许
         window1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // 点击关闭图标后的操作,由常量指定
         
@@ -53,18 +53,18 @@ class WindowMenu extends JFrame{
         menubar = new JMenuBar();
         menu = new JMenu("菜单");
         subMenu = new JMenu("软件项目");
-        item1 = new JMenuItem("Java话题",new ImageIcon("01Java.jpg"));
-        item2 = new JMenuItem("动画话题",new ImageIcon("01Dh.jpg"));
+        item1 = new JMenuItem("Java话题");
+        item2 = new JMenuItem("动画话题");
         item1.setAccelerator(KeyStroke.getKeyStroke('A')); // 按下A建
-        item2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,InputEvent.CTRL_MASK));
+        item2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,InputEvent.CTRL_MASK)); // 按下ctrl+s
         menu.add(item1);
         menu.addSeparator(); // 添加分隔符
         menu.add(item2);
-        menu.add(subMenu); // 菜单嵌套
+        menu.add(subMenu); // 菜单嵌套        
         subMenu.add(new JMenuItem("汽车销售系统")); // 嵌套菜单的内容
         subMenu.add(new JMenuItem("农场系统")); 
         menubar.add(menu); // 菜单添加到菜单条
-        setJMenuBar(menubar);
+        setJMenuBar(menubar); // 设置菜单栏,将菜单放在框中
         
     }
     
