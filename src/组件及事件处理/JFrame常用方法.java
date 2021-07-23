@@ -36,6 +36,10 @@ public class JFrame常用方法 {
         WindowMenu win = new WindowMenu("带菜单系统",200,300,600,400);
     }
 }
+/**
+ * 创建自定义窗口布局
+ * @author qf
+ */
 class WindowMenu extends JFrame{
     JMenuBar menubar;       // 声明菜单条对象
     JMenu menu,subMenu;     // 声明菜单对象
@@ -48,6 +52,10 @@ class WindowMenu extends JFrame{
         setVisible(true);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE); // 不执行如何操作
     }
+    /**
+     * 初始化窗口布局
+     * @param s 
+     */
     void init(String s){
         setTitle(s);  // 设置头
         menubar = new JMenuBar();
