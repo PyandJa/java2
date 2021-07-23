@@ -16,7 +16,10 @@ import javax.swing.*;
  */
 public class 常用容器 {
     public static void main(String[]args){
-        new ShowLayout();
+//        new ShowLayout();
+        WindowBoxLayout win = new WindowBoxLayout();
+        win.setBounds(100, 100, 310, 260);
+        win.setTitle("嵌套盒式布局容器");
     }
 }
 /**
@@ -27,7 +30,7 @@ class ShowLayout extends JFrame{
     PanelGrideLayout pannelGrideLayout; // 网格布局
     PanelNullLayout panelNull; // 空格布局
     JTabbedPane p; // 选项卡窗格
-
+    
     public ShowLayout() throws HeadlessException {
         pannelGrideLayout = new PanelGrideLayout();
         panelNull = new PanelNullLayout();
@@ -86,6 +89,39 @@ class PanelNullLayout extends JPanel{
         // 空布局需要设置属性
         text.setBounds(100, 30, 90, 30);
         button.setBounds(190,30,66,30);
+    }
+    
+}
+/**
+ * 自定义面板盒式布局类
+ * @author qf
+ */
+class  WindowBoxLayout extends JFrame{
+    Box boxH; // 行式盒
+    Box boxVOne,boxVTwo; // 列式盒
+
+    public WindowBoxLayout() throws HeadlessException {
+        setLayout(new FlowLayout());
+        init();
+        setVisible(true);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
+    }
+    /**
+     * 初始化方法
+     */
+    void init(){
+        boxH =Box.createHorizontalBox();
+        boxVOne=Box.createVerticalBox();
+        boxVTwo=Box.createVerticalBox();
+        boxVOne.add(new JLabel("姓名："));
+        boxVOne.add(new JLabel("职业："));
+        boxVTwo.add(new JTextField(10));
+        boxVTwo.add(new JTextField(10));
+        boxH.add(boxVOne);
+        boxH.add(Box.createHorizontalStrut(10));
+        boxH.add(boxVTwo);
+        add(boxH);
     }
     
 }

@@ -14,7 +14,7 @@ import javax.swing.*;
  * @version V1.0
  * @desc    
  */
-public class 常用组件与布局 {
+public class 常用组件 {
     public static void main(String[]args){
         ComponentInWindow win = new ComponentInWindow();
         win.setBounds(100,100,600,260); // 移动并调整此组件的大小。
