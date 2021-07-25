@@ -57,21 +57,21 @@ class WindowMenu extends JFrame{
      * @param s 
      */
     void init(String s){
-        setTitle(s);  // 设置头
+        setTitle(s);          // 设置头
         menubar = new JMenuBar();
         menu = new JMenu("菜单");
         subMenu = new JMenu("软件项目");
-        item1 = new JMenuItem("Java话题");
+        item1 = new JMenuItem("Java话题");        
         item2 = new JMenuItem("动画话题");
-        item1.setAccelerator(KeyStroke.getKeyStroke('A')); // 按下A建
+        item1.setAccelerator(KeyStroke.getKeyStroke('A')); // 按下A建        
         item2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,InputEvent.CTRL_MASK)); // 按下ctrl+s
         menu.add(item1);
-        menu.addSeparator(); // 添加分隔符
+        menu.addSeparator();  // 添加分隔符
         menu.add(item2);
-        menu.add(subMenu); // 菜单嵌套        
+        menu.add(subMenu);    // 菜单嵌套        
         subMenu.add(new JMenuItem("汽车销售系统")); // 嵌套菜单的内容
         subMenu.add(new JMenuItem("农场系统")); 
-        menubar.add(menu); // 菜单添加到菜单条
+        menubar.add(menu);    // 菜单添加到菜单条
         setJMenuBar(menubar); // 设置菜单栏,将菜单放在框中
         
     }
