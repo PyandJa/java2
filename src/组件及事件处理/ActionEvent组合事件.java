@@ -16,7 +16,7 @@ import java.awt.event.*;
  * @version V1.0
  * @desc    
  */
-public class 事件处理2 {
+public class ActionEvent组合事件 {
     public static void main(String [] args){
         windowActionEvent win = new windowActionEvent();
         PoliceListen police = new PoliceListen();

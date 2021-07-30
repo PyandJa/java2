@@ -10,13 +10,13 @@ import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * ActionEvent事件的处理
+ * 文本框,按钮,菜单项,密码框,单选按钮:ActionEvent事件的处理
  * @author  qf
  * @date    2021-7-25 11:00:06
  * @version V1.0
  * @desc    
  */
-public class 事件处理 {
+public class ActionEvent事件 {
     public static void main(String[]args){
         WindowActionEvent  Win = new WindowActionEvent();
         Win.setTitle("处理ActionEvent事件");
