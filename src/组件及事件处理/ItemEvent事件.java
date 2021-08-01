@@ -154,21 +154,26 @@ class ComputerListener implements ActionListener{
             double number1 = Double.parseDouble(inputNumberOne.getText());
             double number2 = Double.parseDouble(inputNumberTwo.getText());
             double result = 0;
-            if (fuhao.equals("+")) {
-                result = number1+number2;
-            }
-            else if (fuhao.equals("-")) {
-                result = number1-number2;
-            }
-            else if (fuhao.equals("*")) {
-                result = number1*number2;
-            }else if (fuhao.equals("/")) {
-                result = number1/number2;
+            switch (fuhao) {
+                case "+":
+                    result = number1+number2;
+                    break;
+                case "-":
+                    result = number1-number2;
+                    break;
+                case "*":
+                    result = number1*number2;
+                    break;
+                case "/":
+                    result = number1/number2;
+                    break;
+                default:
+                    break;
             }
             inputNumberOne.setText("");
             inputNumberTwo.setText("");
             textShow.append(number1+""+fuhao+""+number2+"="+result+"\n");
-        } catch (Exception exp) {
+        } catch (NumberFormatException exp) {
             textShow.append("\n请输入数字字符"+exp.toString()+"\n");
         }
     }
