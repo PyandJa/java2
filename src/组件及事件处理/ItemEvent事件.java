@@ -1,5 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
+ * To change this license header, choose License Headers in Project Properties. 
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -32,7 +32,7 @@ public class ItemEvent事件 {
  * @author qf
  */
 class WindowOperation extends JFrame{
-    JTextField inputNumberOne,inputNumberTwo; // 两个输入框
+    JTextField inputNumberOne,inputNumberTwo; // 声明两个输入框
     JComboBox choiceFuhao;      // 下拉框
     JTextArea textShow;         // 输出框
     JButton button;             // 按钮
@@ -69,7 +69,7 @@ class WindowOperation extends JFrame{
         computer.setJTextFieldOne(inputNumberOne);
         computer.setJTextFieldTwo(inputNumberTwo);
         computer.setJTextArea(textShow);
-        // 为控件添加相关事件
+        // 为控件添加相关事件                                                           
         choiceFuhao.addItemListener(operator); // choiceFuhao是事件源.operator是监视器:  
         button.addActionListener(computer);    // button是事件源,computer是监视器
         add(inputNumberOne);
@@ -107,7 +107,7 @@ class OperatorListener implements ItemListener{
     public void itemStateChanged(ItemEvent e) {
        
         String fuhao = choice.getSelectedItem().toString();
-        workTogether.setFuhao(fuhao); // 获取算数符合
+        workTogether.setFuhao(fuhao); // 获取算数符号
     }
 
 }
