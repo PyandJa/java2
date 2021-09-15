@@ -8,7 +8,7 @@ package 组件及事件处理;
 import java.awt.FlowLayout;
 import javax.swing.*;
 import java.awt.event.*;
-
+/*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/
 /**
  * 利用组合来实现一个对象操作另一个对象
  * @author  qf

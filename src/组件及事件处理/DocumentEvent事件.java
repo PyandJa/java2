@@ -3,51 +3,56 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package 组件及事件处理;
+
 import java.awt.*;
 import javax.swing.event.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Arrays;
 
-
 /**
- * @author  qf
- * @date    2021-9-10 20:24:47
+ * @author qf
+ * @date 2021-9-10 20:24:47
  * @version V1.0
- * @desc    
+ * @desc
  */
 public class DocumentEvent事件 {
-    public static void main(String[]args){
+
+    public static void main(String[] args) {
         WindowDocument win = new WindowDocument();
-        win.setBounds(100,100,590,500);
+        win.setBounds(100, 100, 590, 500);
         win.setTitle("排序单词");
     }
 }
+
 /**
  * 该类负责创建窗口
+ *
  * @author qf
  */
-class WindowDocument extends JFrame{
-    JTextArea inputText,showText;
+class WindowDocument extends JFrame {
+
+    JTextArea inputText, showText;
     JMenuBar menuber;
     JMenu menu;
-    JMenuItem itemCopy,itemCut,itemPaste;
-    TextListener textChangeListener; //inputText的监视器 
+    JMenuItem itemCopy, itemCut, itemPaste;
+    TextListener textChangeListener; // inputText的监视器
     HandleListener handleListener; // itemCopy,itemCut,itemPaste的监视器
-    WindowDocument(){
+
+    WindowDocument() {
         init();
         setLayout(new FlowLayout());// 自动排版
         setVisible(true);// 显示
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 设置点击关闭按钮的操作
     }
+
     /**
      * 初始化界面
      */
-    void init(){
-        inputText=new JTextArea(15,20);
-        showText=new JTextArea(15, 20);
+    void init() {
+        inputText = new JTextArea(15, 20);
+        showText = new JTextArea(15, 20);
         showText.setLineWrap(true);// 文本自动回车换行
         showText.setWrapStyleWord(true);// 文本区以单词为界自动换行
         menuber = new JMenuBar();
@@ -55,7 +60,7 @@ class WindowDocument extends JFrame{
         itemCopy = new JMenuItem("复制(C)");
         itemCut = new JMenuItem("剪切(T)");
         itemPaste = new JMenuItem("粘贴(P)");
-        itemCopy.setAccelerator(KeyStroke.getKeyStroke('c'));//设置快捷方式
+        itemCopy.setAccelerator(KeyStroke.getKeyStroke('c'));// 设置快捷方式
         itemCut.setAccelerator(KeyStroke.getKeyStroke('t'));
         itemPaste.setAccelerator(KeyStroke.getKeyStroke('p'));
         itemCopy.setActionCommand("copy");
@@ -79,17 +84,22 @@ class WindowDocument extends JFrame{
         itemPaste.addActionListener(handleListener);
     }
 }
+
 /**
  * 该类负责创建触发DocumentEvent事件的监视器
+ *
  * @author qf
  */
-class TextListener implements DocumentListener{
-    JTextArea inputTextArea,showText;
-    public void setInputText(JTextArea text){
-        inputTextArea=text;       
+class TextListener implements DocumentListener {
+
+    JTextArea inputTextArea, showText;
+
+    public void setInputText(JTextArea text) {
+        inputTextArea = text;
     }
-    public void setshowText(JTextArea text){
-        showText=text;
+
+    public void setshowText(JTextArea text) {
+        showText = text;
     }
 
     @Override
@@ -104,41 +114,46 @@ class TextListener implements DocumentListener{
 
     @Override
     public void changedUpdate(DocumentEvent e) {
-        String str=inputTextArea.getText();
+        String str = inputTextArea.getText();
         // 空格、数字和字符(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)组成的正则表达式
-        String regex="[\\s\\d\\p{Punct}]+";
-        String words[]=str.split(regex);
+        String regex = "[\\s\\d\\p{Punct}]+";
+        String words[] = str.split(regex);
         Arrays.sort(words); // 按字典序从大到小排序
         showText.setText(null);
         for (int i = 0; i < words.length; i++) {
-            showText.append(words[i]+",");         
+            showText.append(words[i] + ",");
         }
     }
-    
+
 }
 
 /**
  * 该类负责创建触发ActionEvent事件的监视器
+ *
  * @author qf
  */
-class HandleListener implements ActionListener{   
-    JTextArea inpuText,showText;
-    public void setinputText(JTextArea text){
-        inpuText=text;
+class HandleListener implements ActionListener {
+
+    JTextArea inpuText, showText;
+
+    public void setinputText(JTextArea text) {
+        inpuText = text;
     }
-    
-    public void setShowText(JTextArea text){
-        showText=text;
-    } 
-    
+
+    public void setShowText(JTextArea text) {
+        showText = text;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        String str=e.getActionCommand();
-        if(str.equals("copy"))
+        String str = e.getActionCommand();
+        if (str.equals("copy")) {
             showText.copy();
-        else if(str.equals("cut"))
+        } else if (str.equals("cut")) {
             showText.cut();
-        else if(str.equals("paste"))
+        } else if (str.equals("paste")) {
             inpuText.paste();
-    } 
+        }
+
+    }
 }
