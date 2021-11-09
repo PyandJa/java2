@@ -14,13 +14,13 @@ import javax.swing.*;
 
 
 /**
- * 选择框,下拉列表:ItemEvent事件
+ * 选择框,下拉列表:下拉框事件
  * @author  qf
  * @date    2021-7-27 21:19:28
  * @version V1.0
  * @desc    
  */
-public class ItemEvent事件 {
+public class 下拉框事件 {
     public static void main(String[]args){
         WindowOperation win = new WindowOperation();
         win.setBounds(100, 100, 390, 360);

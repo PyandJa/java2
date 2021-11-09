@@ -6,10 +6,9 @@
 package 匿名类;
 
 /**
- *
+ *输出信息类
  * @author 13340
  */
-//输出信息类
 public class ShowBoard {
     void showMess(OutputAlphabet show){
         show.output();

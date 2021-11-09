@@ -21,7 +21,7 @@ import static javax.swing.JFrame.*;
  * @version V1.0
  * @desc    
  */
-public class JFrame常用方法 {
+public class 顶部菜单栏 {
     public static void main(String[]args){
         // 创建窗口：
         JFrame window1 = new JFrame("Java的第一个窗口");            // 创建窗口对象

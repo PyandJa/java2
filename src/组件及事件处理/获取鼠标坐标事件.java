@@ -16,11 +16,11 @@ import javax.swing.*;
  * @version V1.0
  * @desc    这是用于描述组件鼠标事件的类
  */
-public class MouseEvetn事件 {
+public class 获取鼠标坐标事件 {
     public static void main(String[] args) {
         WindowMouse win=new WindowMouse();
         win.setTitle("处理鼠标事件");
-        win.setBounds(100,100,460,360);
+        win.setBounds(100,100,460,360); // 
     }
 }
 /**
@@ -99,9 +99,9 @@ class MousePolice implements MouseListener{
         if(e.getSource() instanceof JButton)
            area.append("\n 鼠标进入按钮，位置："+"("+e.getX()+","+e.getY()+")");
         if (e.getSource() instanceof  JTextField)
-            area.append("\n 鼠标进入文本框，位置:"+"("+e.getX()+","+e.getY()+")");
+           area.append("\n 鼠标进入文本框，位置:"+"("+e.getX()+","+e.getY()+")");
         if(e.getSource() instanceof JFrame)
-            area.append("\n 鼠标进入窗口，位置:"+"("+e.getX()+","+e.getY()+")");
+           area.append("\n 鼠标进入窗口，位置:"+"("+e.getX()+","+e.getY()+")");
     }
 
     /**

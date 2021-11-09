@@ -18,7 +18,7 @@ import java.awt.event.*;
  * @version V1.0
  * @desc
  */
-public class ActionEvent事件 {
+public class 回车按钮事件 {
     public static void main(String[] args) {
         WindowActionEvent Win = new WindowActionEvent();
         Win.setTitle("处理ActionEvent事件");
@@ -33,11 +33,11 @@ class WindowActionEvent extends JFrame {
     public WindowActionEvent() {
         setLayout(new FlowLayout()); // 流式布局
         text = new JTextField(10); // 初始化宽度
-        add(text);
+        add(text); // 添加文本框
         listener = new ReaderListen(); // 创建监视器
         text.addActionListener(listener); // text将listener注册为自己的监视器
         setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 退出时关闭程序
     }
 }
 

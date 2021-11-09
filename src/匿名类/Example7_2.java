@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package 匿名类;
-import 接口匿名类.*;
+
 /**
  *
  * @author 13340
@@ -13,7 +13,7 @@ public class Example7_2 {
     public static void main(String[]args){
         ShowBoard board=new ShowBoard();
         board.showMess(new OutputEnglish());//参数是子类的对象。
-        board.showMess(new OutputAlphabet (){//参数是匿名子类对象。
+        board.showMess(new OutputAlphabet(){//参数是匿名子类对象。
             //匿名类同样要重写父类的抽象方法。
             @Override
             public void output() {
