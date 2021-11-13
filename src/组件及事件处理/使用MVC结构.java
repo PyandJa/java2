@@ -54,7 +54,7 @@ class WindowTriangle extends JFrame implements ActionListener{
         pNorth.add(new JLabel("边C"));
         pNorth.add(textC);
         pNorth.add(controllButton);
-        controllButton.addActionListener(this); // 把窗口注册为按钮的监视器，当窗口监视到按钮的Action动作时，就会触发相应的actionPerformed方法。
+        controllButton.addActionListener(this); // 把窗口注册为按钮的监视器，当窗口监视到按钮的Action动作时，就会触发actionPerformed方法。
         add(pNorth,BorderLayout.NORTH);
         add(new JScrollPane(showArea),BorderLayout.CENTER); // 滚动窗格
         
@@ -63,8 +63,9 @@ class WindowTriangle extends JFrame implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        try {
-            double a = Double.parseDouble(textA.getText().trim()); // 获取去掉空格后的内容
+        try {          
+    // +=====================获取数据=========================+
+            double a = Double.parseDouble(textA.getText().trim()); 
             double b = Double.parseDouble(textB.getText().trim());
             double c = Double.parseDouble(textB.getText().trim());
     // +=====================更新数据=========================+
