@@ -43,3 +43,10 @@ class GetPrice{
         return sum;
     }
 }
+/*
+    1.Scanner类的对象用于从字符串中解析出程序所需的字符
+    2.next()方法依次返回
+    3.nextInt()和nextDouble()方法可以代替next()方法，即可以调用该方法将数值型单词转型位int或double
+    4.返回数据类型错误时会发生InputMismatchException异常
+    5.可以使用useDelimiter(正则表达式)来解析字符串，否则默认与空格，回车，制表来解析。
+*/
