@@ -7,7 +7,20 @@ package Java10大常用类;
 import java.util.*;
 
 /**
- *
+ *    <li>1.public int length():获取字符串序列长度。
+      <li>2.public boolean equals(String s):比较当前对象的字符序列与参数s是否相同。
+      <li>3.public boolean startsWith(String s):判断当前对象的字符前缀是否是参数字符。
+      和 pubic boolean endsWith(String s)：判断当前对象的字符后缀是否是参数字符。
+      <li> 4.public int compareTo(String s):按字典序与参数比较大小，相同则返回0，大于s
+       则返回正值,小于s则返回负值。
+      <li> 5.public boolean contains(String s):判断对象的字符中是否包含有参数的字符。
+      <li> 6.public int indexOf(String s)：从零开始检索字符串s首次出现的位置。
+       public int lastIndexOf(String s):从零开始价检索字符串s最后一次出现的位置。
+       public int indexOf(String str,int startpoint):是一个重载方法,startpoint
+       参数用于指定检索的开始位置。没有检索到则返回-1，空格算一个字符。
+      <li> 7.pubic String substring(int s):复制s到序列最后。
+       public String substring(int start,int end):复制start到end-1位置。
+       <li> 8.public String trim():获得新的不包含空格的String对象。
  * @author 13340
  */
 public class String类常用方法 {
@@ -44,23 +57,6 @@ public class String类常用方法 {
             System.out.print(" "+b[i]);
         }
     }   
-    /*
-    String类常用方法:
-     1.public int length():获取字符串序列长度。
-     2.public boolean equals(String s):比较当前对象的字符序列与参数s是否相同。
-     3.public boolean startsWith(String s):判断当前对象的字符前缀是否是参数字符。
-      和 pubic boolean endsWith(String s)：判断当前对象的字符后缀是否是参数字符。
-     4.public int compareTo(String s):按字典序与参数比较大小，相同则返回0，大于s
-       则返回正值,小于s则返回负值。
-     5.public boolean contains(String s):判断对象的字符中是否包含有参数的字符。
-     6.public int indexOf(String s)：从零开始检索字符串s首次出现的位置。
-       public int lastIndexOf(String s):从零开始价检索字符串s最后一次出现的位置。
-       public int indexOf(String str,int startpoint):是一个重载方法,startpoint
-       参数用于指定检索的开始位置。没有检索到则返回-1，空格算一个字符。
-     7.pubic String substring(int s):复制s到序列最后。
-       public String substring(int start,int end):复制start到end-1位置。
-     8.public String trim():获得新的不包含空格的String对象。
-    */
        
 }
 //

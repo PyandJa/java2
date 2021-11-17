@@ -7,7 +7,7 @@ package Java10大常用类;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 /**
- * 该类是一个模式匹配类,用于匹配字符串在字符序列中出现的位置。
+ * <li>该类是一个模式匹配类,用于匹配字符串在字符序列中出现的位置。
  * @author qf
  */
 public class Pattern类 {

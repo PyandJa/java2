@@ -7,9 +7,9 @@ package Java10大常用类;
 import java.io.Console;
 
 /**
- * Java.io.Console 只能用在标准输入、输出流未被重定向的原始控制台中使用，
- * 在 Eclipse 或者其他 IDE 的控制台是用不了的。
- * 不希望用户输入的内容回显
+ * <li>Java.io.Console 只能用在标准输入、输出流未被重定向的原始控制台中使用，
+ * <li>在 Eclipse 或者其他 IDE 的控制台是用不了的。
+ * <li>不希望用户输入的内容回显
  * @author qf
  */
 public class Console类 {

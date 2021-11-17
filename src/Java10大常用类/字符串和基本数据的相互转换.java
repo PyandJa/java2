@@ -6,7 +6,7 @@
 package Java10大常用类;
 
 /**
- *
+ * <li>只能高转低，不能低转高
  * @author 13340
  */
 public class 字符串和基本数据的相互转换 {

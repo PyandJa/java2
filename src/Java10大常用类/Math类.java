@@ -6,7 +6,7 @@
 package Java10大常用类;
 import java.lang.Math;
 /**
- * 该类存储了许多用于科学计算的静态方法
+ * <li>该类存储了许多用于科学计算的静态方法
  * @author qf
  */
 public class Math类 {

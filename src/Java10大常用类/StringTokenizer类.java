@@ -6,7 +6,7 @@
 package Java10大常用类;
 import java.util.StringTokenizer;
 /**
- * 该类不使用正则表达式作为分隔标记
+ * <code>该类不使用正则表达式作为分隔标记</code>
  * @author 13340
  */
 public class StringTokenizer类 {

@@ -6,7 +6,7 @@
 package Java10大常用类;
 
 /**
- * StringBuffer类可以动态添加字符串。
+ * <li>StringBuffer类可以动态添加字符串。
  * @author qf
  */
 public class StringBuffer类 {

@@ -6,10 +6,10 @@
 package Java10大常用类;
 
 /**
- *
+ *<code>理解String对象和常量、实体和引用</code>
  * @author 13340
  */
-//理解String对象和常量、实体和引用
+//
 public class 理解引用 {
     public static void main(String[]args){
         String hello="你好";//常量赋值给String对象。

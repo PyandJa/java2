@@ -6,7 +6,7 @@
 package Java10大常用类;
 import java.math.BigInteger;
 /**
- * 该类用于处理特别大的整数
+ * <p>该类用于处理特别大的整数</p>
  * @author qf
  */
 public class BigInteger类 {

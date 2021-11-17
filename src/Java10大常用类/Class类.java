@@ -5,11 +5,7 @@
  */
 package Java10大常用类;
 import java.util.Date;
-/**
- * Class类可以帮助程序创建其他类的实列
- * 经常用于加载数据库驱动相关的类
- * @author qf
- */
+
 
 /**
  * 这是一个矩形类
@@ -23,7 +19,11 @@ class Rect{
         return area;
     }
 }
-
+/**
+ * <li>Class类可以帮助程序创建其他类的实列
+ * <li>经常用于加载数据库驱动相关的类
+ * @author qf
+ */
 public class Class类 {
     public static void main(String[]args){
         try{

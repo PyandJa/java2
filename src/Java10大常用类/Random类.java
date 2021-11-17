@@ -7,7 +7,7 @@ package Java10大常用类;
 import java.util.Random;
 
 /**
- * 该类用于生成随机数
+ * <li>该类用于生成随机数
  * @author qf
  */
 public class Random类 {

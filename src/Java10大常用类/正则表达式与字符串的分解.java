@@ -6,6 +6,7 @@
 package Java10大常用类;
 import java.util.Scanner;
 /**
+ * <li>1.split方法用于以给定的正则表达式参数分解字符串。
  * @author 13340
  */
 public class 正则表达式与字符串的分解 {
@@ -43,4 +44,3 @@ public class 正则表达式与字符串的分解 {
         }
     }       
 }
-//1.split方法用于以给定的正则表达式参数分解字符串。

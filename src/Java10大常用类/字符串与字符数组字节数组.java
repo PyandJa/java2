@@ -6,13 +6,19 @@
 package Java10大常用类;
 
 /**
- *
+ *      <li>1.String类的构造方法String(byte[])用指定得字节数组构造一个String对象。
+        String(byte[],int offset,int length)构造方法用指定的字节数组的一部分，
+        即从数组起始位置offset开始获取length个字节，构造一个String对象。
+         <li>2.public byte[]getBytes(String charsetName)方法使用平台默认字符编码，
+        将当前String对象的字符序列存放到字节数组中，并返回数组的引用。
+         <li>3.toCharArray：对字符串进行数组转换
+        。。。
  * @author 13340
  */
 public class 字符串与字符数组字节数组 {
     /**
      * 
-     * @param args 这是要使用得方法参数
+     * @param args 这是要使用的方法参数
      */
     public static void main(String[]args){
         char [] a,c;
@@ -25,15 +31,5 @@ public class 字符串与字符数组字节数组 {
             System.out.print(c[i]);
         
     }
-    /*
-        1.String类的构造方法String(byte[])用指定得字节数组构造一个String对象。
-        String(byte[],int offset,int length)构造方法用指定的字节数组的一部分，
-        即从数组起始位置offset开始获取length个字节，构造一个String对象。
-        2.public byte[]getBytes(String charsetName)方法使用平台默认字符编码，
-        将当前String对象的字符序列存放到字节数组中，并返回数组的引用。
-        3.toCharArray：对字符串进行数组转换
-        。。。
-    */
-    
-    
+      
 }
