@@ -60,7 +60,7 @@ class TreeWin extends JFrame implements TreeSelectionListener{
         setLayout(new GridLayout(1,2)); // 布局为网格布局
         add(new JScrollPane(tree));  // 添加滚动条
         add(new JScrollPane(showText)); // 添加滚动条
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setBounds(80,80,300,300);
         validate(); // 验证
