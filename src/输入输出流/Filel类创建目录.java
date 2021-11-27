@@ -18,7 +18,7 @@ public class Filel类创建目录 {
         File dirFile = new File("."); // .表示上一层目录
         FileAccept fileAccept = new FileAccept();
         fileAccept.setExtendName("java"); // 设置java类型文件
-        String fileName[] = dirFile.list(fileAccept); // 接口回调：用字符串形式返回目录下所有.java类型文件
+        String fileName[] = dirFile.list(fileAccept); // 接口回调：用字符串形式返回目录下所有java类型文件
         for(String name:fileName){ // 使用增强for循环列出所有.java类型的文件名称
             System.out.println(name);
         }
