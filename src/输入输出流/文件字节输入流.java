@@ -23,7 +23,7 @@ public class 文件字节输入流 {
             InputStream in = new FileInputStream(f); // FileInputStream类是InputStream类的子类：创建指向文件gbt.txt的输入流。
             while((n=in.read(a,0,100))!=-1){ // read()：以字节为单位读取源中的数据。返回-1表示已经读取到数据流的最后位置。
                 String s = new String(a,0,n); // 把字节转换为字符串。
-                System.out.println(s);
+                System.out.println(s);  
             }
             in.close(); // 关闭流
         }
