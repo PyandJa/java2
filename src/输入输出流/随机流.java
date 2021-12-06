@@ -56,10 +56,11 @@ class readLineShiYong{
             in.seek(position); // 将读取位置定位到文件的起始
             while (position<length) {                
                 String str = in.readLine();
-                byte b[] = str.getBytes("iso-8859-1");
+                byte b[] = str.getBytes("iso-8859-1"); // 重新编码
                 str = new String(b);
                 position = in.getFilePointer();
                 System.out.println(str);
+               
             }
         } catch (IOException e) {
         }
