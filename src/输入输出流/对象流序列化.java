@@ -14,7 +14,7 @@ import java.nio.file.Files;
  * @version V1.0
  * @desc    
  */
-public class 对象流 {
+public class 对象流序列化 {
     public static void main(String[]args){
         
         TV changhong = new TV();
